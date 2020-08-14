@@ -1,0 +1,124 @@
+* {
+    box-sizing:border-box
+  }
+
+h1 {
+    text-align: center;
+    align-self: center;
+    background-color: black;
+    color: #f2f2f2;
+    padding-top: 0.2cm;
+    margin: 0;
+  }
+.slideshow-container {
+    max-width: 900px;
+    position: relative;
+    margin: auto;
+    margin-top: 0.5cm;
+  }
+
+.mySlides {
+      display: none;
+  }
+
+.text {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 4px;
+    width: 100%;
+    text-align: center;
+    font-family: fantasy;
+    font-weight: bold;
+  }
+
+.numbering {
+      margin-bottom: 1cm;
+  }
+
+.dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+.active, .dot:hover {
+    background-color: #717171;
+  }
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+.content-box {
+      background-color: #75244e;
+      border-color: black;
+      width: 49%;
+      height: 300px;
+      float: left;
+  }
+
+.content-title {
+      background-image: linear-gradient(to right,black,#4d1933,black);
+      color: #f2f2f2;
+      margin: 0em;
+      padding: 0.3cm;
+      text-align: center;
+      font-family: fantasy;
+  }
+
+.skills-box {
+      background-color: #75244e;
+      border: black 10px ;
+      width: 49% ;
+      height: 300px;
+      float: right;
+  }
+
+.items:hover {
+    background-color: #311021;
+    color: #f2f2f2;
+}
+  
+.footer {
+        display: inline-block;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #270c1a;
+        color: white;
+        text-align: center;
+        margin-top: 1cm;
+  }
+
+ul {
+    list-style-type: none;
+    display: inline;
+}
+
+li {
+    display: block;
+    text-align: center;
+    cursor:pointer;
+    font-size: larger;
+    padding: 20px;
+}
